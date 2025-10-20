@@ -58,6 +58,7 @@ h1 a:hover {
 }
 
 .content iframe {
+
     border: 2px solid rgba(255, 215, 0, 0.3);  /* Subtle golden border */
     width: 100%;
     height: 80vh;
@@ -78,43 +79,3 @@ h1 a:hover {
     transform: translateY(-2px);  /* Slight lift effect */
 }
 
-/* Glowing gold button styles */
-button {
-    background: linear-gradient(90deg, #FFD700 0%, #FFF01F 100%);
-    color: #222;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: 2px solid rgba(255, 215, 0, 0.5);
-    border-radius: 8px;
-    padding: 0.7em 2em;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5),
-                0 0 20px rgba(255, 215, 0, 0.3);
-    text-shadow: 0 0 6px rgba(255, 215, 0, 0.5);
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(.4,2,.3,1);
-    outline: none;
-    margin: 1em auto;
-    display: block;
-}
-
-button:hover, button:focus {
-    background: linear-gradient(90deg, #FFF01F 0%, #FFD700 100%);
-    color: #111;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7),
-                0 0 40px rgba(255, 215, 0, 0.4);
-    border-color: #FFD700;
-    transform: translateY(-2px) scale(1.04);
-}
-
-button:active {
-    background: #FFD700;
-    color: #333;
-    box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
-    transform: scale(0.98);
-}
-
-button[disabled] {
-    opacity: 0.6;
-    cursor: not-allowed;
-    box-shadow: none;
-}
